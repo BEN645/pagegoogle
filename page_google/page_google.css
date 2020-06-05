@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+header{
+    height: 3.75rem;
+    line-height: 3.75rem;
+    font-size: 1.125rem;
+}
+
+.nav {
+    float: right;
+    padding: 0 1.25rem;
+}
+.nav > a {
+    padding: .625rem .9375rem;
+    text-decoration: none;
+    color: #000;
+}
+.ion-md-apps {
+    font-size: 2.1875rem;
+    margin-right: .9375rem;
+    padding:0 .3125rem;
+    position: relative;
+    top: .5rem;
+    cursor: pointer;
+}
+
+
+/*--------------------------    Header ---------------*/
+.container {
+    text-align: center;
+    padding-top: 2.5rem;  
+    margin: 1.5rem 0 3.125rem 0;
+}
+.logo {
+    padding: .9375rem 0;
+}
+.search {
+    padding-left: 1rem ;
+    font-size: 1.06rem;
+    text-align: start;
+    border: none;
+    width: 37.5rem;
+    height: 3.125rem;
+    border-radius: 2.3125rem;
+    box-shadow: 0px 0px .1rem rgba(0, 0, 0, 0.52);
+}
+.search:focus {
+    outline: none;
+    border: none;
+}
+.ion-md-search {
+    font-size: 2.1875rem;
+    color: rgba(0, 0, 0, 0.52);
+    position: relative;
+    left: 2.5rem;
+    top: .625rem;
+}
+.ion-md-mic {
+    font-size: 1.875rem;
+    position: relative;
+    right: 4.5rem;
+    top: .375rem;
+}
+
+.bt-search {
+    padding: 2.3125rem 0;
+}
+.bt-search > a {
+    text-decoration: none;
+    color: black;
+    font-size: .9rem;
+    padding: .625rem 1.875rem;
+    background:#ececec;
+    margin: 0 .625rem;
+}
+.lang-select > p > a {
+    text-decoration: none;
+}
+
+/*---------------------------------------- Footer -----------------------*/
+.footer {
+    background: #ececec;
+    width: 100%;
+    padding: 1rem 2rem;
+    position: absolute;
+    bottom: 0;
+}
+hr {
+    position: relative;
+    bottom: .4375rem;
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.52);
+    padding: 0;
+    margin: 0;
+}
+
+.footer-top {
+    padding: 1.25rem 0;
+    margin-left: .625rem;
+}
+.footer-bottom {
+    padding: 1.875rem 0;
+    
+}
+.footer-left {
+    float: left;
+    display: flex;
+    align-content: center;
+}
+.footer-right {
+    float: right;
+}
+.footer-left a {
+    color: #000;
+    text-decoration:none;
+    margin: 0 .625rem;
+}
+.footer-right a {
+    text-decoration: none;
+    color: #000;
+    margin: 0 1.25rem;
+}
+
+
+
+
+/*------------------- Responsive --------------*/
+@media only screen and (max-width:900px) {
+    body {
+        font-size: 12px;
+    }
+    .nav a:nth-child(4) {
+        display: none;
+    }
+    .nav a {
+        font-size: .7rem;
+    }
+    .icon {
+        font-size: 1.8rem;
+    }
+
+    /*-------- Container -------------*/
+    .container {
+        padding: 0;
+        margin: 0;
+    }
+    .research {
+        padding: 0;
+        margin: 0;
+    }
+    .logo {
+        margin-top: 2rem;
+        padding: 0;
+    }
+    .logo img {
+        width: 8rem;
+        height: auto;
+    }
+    .search {
+        font-size: .7rem;
+        text-align: start;
+        border: none;
+        width: 12.75rem;
+        height: 1rem;
+        border-radius: 1.25rem;
+    }
+    .ion-md-mic {
+        font-size: .8rem;
+        top: .09rem;
+        right: 1.875rem;
+    }
+    .bt-search {
+        padding: .2rem 0;
+    }
+    .bt-search > a {
+        font-size: .5rem;
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.6);
+        padding: .2rem .4rem;
+        background:#ececec;
+        margin: 0 .1rem
+    }
+    .lang-select p {
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    .lang-select > p a {
+        color: rgba(0, 0, 0, 0.6);
+        font-size: .8rem;
+        text-decoration: none;
+    }
+
+    /*------------------------- Footer ------------*/
+    .footer {
+        padding: .5rem 0;
+        font-size: .7rem;
+    }
+    .footer-bottom {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .footer-left {
+        display: flex;
+    }
+    .footer-right {
+        margin-top: .2rem;
+        padding: 1.25rem 0;
+    }

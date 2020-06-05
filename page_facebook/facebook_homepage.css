@@ -1,0 +1,113 @@
+body
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.entete
+{
+    border: 3px rgb(61, 61, 133) solid;
+    background-color: rgb(41, 45, 112);
+    height: 100px;
+}
+.page
+{
+    width: 100%;
+    height: 625px;
+    background-color: rgb(240, 236, 236);
+    
+    
+}
+h1
+{
+    color: white;
+    position: relative;
+    left: 100px;
+    font-size: 2.7em;
+    bottom: 12px;
+}
+.case1
+{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 670px;
+    top: -90px;
+    color:white;
+}
+button
+{
+    color:white;
+    background-color: rgb(40, 46, 165);
+}
+a
+{
+    color: grey;
+}
+.corps
+{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 100px;
+
+
+}
+.corps1
+{
+    
+    width: 500px;
+    height: 500px;
+}
+.corps2
+{
+    
+    width: 500px;
+    height: 500px;
+}
+.signe
+{
+    position: relative;
+    bottom: -100px;
+}
+@media only screen and (max-width:1360px) 
+{
+    .corps
+    {
+        display: inline-block;
+        width: 100%;  
+        height: 100px;  
+    }
+    .page
+    {
+        height: 1300px;
+
+        
+    }
+}
+@media only screen and (max-width:1120px) 
+{
+    .case1
+    {
+        display: inline-block;
+        position: absolute;
+        left: 100px;
+        top: 80px;      
+
+    }
+    .entete
+    {
+        height: 200px;
+        width: 100%;
+    }
+    .corps1, .corps2
+    {
+        font-size: 10px;
+    }
+    .corps2
+    {
+        display: inline-block;
+        
+    }
+
+}
